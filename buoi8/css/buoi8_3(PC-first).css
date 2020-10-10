@@ -1,0 +1,38 @@
+#id1,#id2,#id3,#id4{
+	width: 25%;
+	float: left;
+}
+
+#id1{
+	background-color: red;
+}
+
+#id2{
+	background-color: blue;
+}
+
+#id3{
+	background-color: green;
+}
+
+#id4{
+	background-color: yellow;
+}
+
+@media only screen and (max-width: 1200px){
+	#id1,#id2,#id3,#id4{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 992px){
+	#id1,#id2,#id3,#id4{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	#id3,#id4{
+		display: none;
+	}
+}

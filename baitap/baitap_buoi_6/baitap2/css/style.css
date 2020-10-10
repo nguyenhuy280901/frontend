@@ -1,0 +1,119 @@
+@font-face{
+	font-family: Ubuntu-Medium;
+	src: url("font/Ubuntu-Medium.ttf");
+}
+
+div.content{
+	width: 60%;
+	margin: 100px auto;
+	font-family: Ubuntu-Medium;
+}
+
+div.content div#left{
+	width: 50%;
+	float: left;
+}
+
+div.content div#right{
+	width: 50%;
+	float: left;
+}
+
+div.content div#left ul{
+	margin: 20px 10px;
+	padding: 0px;
+}
+
+div.content div#left ul li{
+	list-style: none;
+	line-height: 50px;
+}
+
+div.content div#left ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+div.content div#left ul li a#first{
+	color: #2AB6F7;
+}
+
+div.content div#left ul li a:hover{
+	color: #2AB6F7;
+}
+
+div.content div#left label{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 180px;
+}
+
+div.content div#right h3{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+div.content div#right div.row{
+	margin: 20px 10px 0px 20px;
+}
+
+div.content div#right div.row label.label_left{
+	display: inline-block;
+	width: 150px;
+	text-align: left;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+div.content div#right div.row .gender_radio{
+	float: left;
+}
+
+div.content div#right div.row input[type=text]{
+	padding: 3px 5px;
+	width: 240px;
+	height: 20px;
+}
+
+div.content div#right div.row label.label_button{
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	border: 1px solid black;
+	font-weight: bold;
+	text-align: center;
+}
+
+div.content div#right div.row select{
+	width: 150px;
+	height: 28px;
+}
+
+div.content div#right div.row input[type=range]{
+	width: 250px;
+}
+
+div.content div#right div.row div.gender_radio label{
+	font-size: 18px;
+	line-height: 25px;
+}
+
+div.content div#right input.hiden_button{
+	overflow: hidden;
+	width: 0px;
+	height:  0px;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}

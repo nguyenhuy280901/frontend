@@ -1,0 +1,40 @@
+/*Khi cùng độ ưu tiên thì sẽ ưu tiên apply cái sau(thứ tự trong css)*/
+.class2 {
+	background-color: red;
+}
+
+.class1 {
+	background-color: orange;
+	font-size: 20px;
+}
+
+[type=number] {
+	width:400px;
+}
+
+
+class4 {
+	background-color: green;
+}
+
+.class5 {
+	background-color: blue;
+}
+
+#id2 {
+	background-color: orange;
+}
+
+[name="name1"] {
+	background-color: yellow;
+}
+
+/*text-overflow: chỉ định việc nội dung bị tràn ra ngoài phần tử không được hiển thị thì nên có tín hiệu báo cho người dùng*/
+#id11 {
+  width:200px;
+  height:50px;
+  border: 1px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

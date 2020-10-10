@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="content">
+		<div id="left">
+			<img src="profileicon.png" alt="">
+			<nav>
+				<ul>
+					<li><a href="" id="first">Personal Information</a></li>
+					<li><a href="">Certificates</a></li>
+					<li><a href="">Interest</a></li>
+					<li><a href="">Change Password</a></li>
+				</ul>
+			</nav>
+			<label for="submit_button" class="label_button">Save</label>
+		</div>
+		<div id="right">
+			<h3>Personal information</h3>
+			<hr>
+			<form action="server.php" method="POST">
+				<div class="row">
+					<label class="label_left" for="input_firstname">FirstName: </label>
+					<input type="text" id="input_firstname" name="firstname">
+				</div>
+				<div class="row">
+					<label class="label_left" for="input_lastname">LastName: </label>
+					<input type="text" id="input_lastname" name="lastname">
+				</div>
+				<div class="row">
+					<label class="label_left" for="input_email_address">Email Address: </label>
+					<input type="text" id="input_email_address" name="email_address">
+				</div>
+				<div class="row">
+					<label class="label_left" for="upload_image">Upload Image: </label>
+					<label class="label_button" for="upload_image">Browser</label>
+				</div>
+				<div class="row">
+					<label class="label_left" for="input_location">Location: </label>
+					<input type="text" id="input_location" name="location">
+				</div>
+				<div class="row">
+					<label class="label_left" for="input_country">Country: </label>
+					<select id="input_country" name="country">
+						<option value="select--">select--</option>
+					</select>
+				</div>
+				<div class="row">
+					<label class="label_left" for="input_english_level">English Level: </label>
+					<input type="range" id="input_english_level" name="english_level" value="2" min="0" max="5">
+				</div>
+				<div class="row">
+					<label class="label_left gender_radio">Gender: </label>
+					<div class="gender_radio">
+						<input type="radio" id="input_gender_male" name="gender" value="Male" checked><label for="input_gender_male">Male</label><br>
+
+						<input type="radio" id="input_gender_female" name="gender" value="Female"><label for="input_gender_female">Female</label><br>
+
+						<input type="radio" id="input_gender_undefine" name="gender" value="Undefine"><label for="input_gender_undefine">Undefine</label>
+					</div>
+				</div>
+				<input type="file" id="upload_image" name="upload_image" class="hiden_button">
+				<input type="submit" id="submit_button" class="hiden_button">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+@font-face{
+	font-family: "Lato-Regular";
+	src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Lato-Light";
+	src: url('../fonts/Lato/Lato-Light.ttf');
+}
+
+@font-face{
+	font-family: "Lato-Bold";
+	src: url('../fonts/Lato/Lato-Bold.ttf');
+}
+
+@font-face{
+	font-family: "Lato-Italic";
+	src: url('../fonts/Lato/Lato-Italic.ttf');
+}
+
+body{
+	font-size: 14px;
+	color: #444;
+	font-family: Lato-Regular;
+	max-width: 1020px;
+	margin: 0px auto;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container{
+	max-width: 1020px;
+}
+
+/* Reset margin */
+p,h1,h2,h3{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Lato-Regular;
+}
+
+/* Header */
+
+header .navbar{
+	margin-bottom: 0;
+}
+
+header .navbar-default .navbar-nav>li>a {
+	color: #444;
+    line-height: 37px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+header .navbar-default {
+    border: none;
+    background: none;
+}
+
+header .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: #1bbc9b;
+}
+
+header .navbar-default .navbar-nav>li{
+	padding-top: 29px;
+	padding-bottom: 29px;
+}
+
+header .navbar-collapse{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media only screen and (max-width: 768px){
+	header .navbar-default .navbar-nav>li{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	header .navbar-brand>img{
+		width: 120px;
+	}
+}
+
+
+/* Main */
+/* Home */
+main .home{
+	padding-top: 72px;
+	padding-bottom: 82px;
+	background-image: url('../images/Banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+main .home h1{
+	font-size: 55px;
+	font-family: Lato-Light;
+	color: #fff;
+	line-height: 57px;
+	margin-bottom: 30px;
+}
+
+main .home h1 strong{
+	font-family: Lato-Bold;
+}
+
+main .home p{
+	font-family: Lato-Light;
+	font-size: 18px;
+	color: #fff;
+	line-height: 21px;
+	max-width: 576px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 46px;
+}
+
+main .home button, main .portfolio button,main .contact .row .col-md-6 input[type=submit]{
+	font-family: Lato-Bold;
+	font-size: 13px;
+	color: #fff;
+	line-height: 13px;
+	padding: 12px 11px;
+	background-color: #1bbc9b;
+	border: none;
+	letter-spacing: 2px;
+	margin-bottom: 42px;
+}
+
+input[type=submit]:focus, button:focus{
+	outline: none;
+}
+
+main .home button:focus{
+	outline: none;
+}
+
+main .home a{
+	display: block;
+}
+
+
+/* Portfolio */
+main .portfolio {
+	padding-top: 50px;
+	padding-bottom: 26px;
+}
+
+main .portfolio h2{
+	font-size: 28px;
+	line-height: 29px;
+	margin-bottom: 13px;
+}
+
+main .portfolio p{
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 36px;
+}
+
+main .portfolio button{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 44px;
+}
+
+main .portfolio .row div{
+	margin-bottom: 34px;
+}
+
+/* About */
+
+main .about{
+	padding-top: 55px;
+	padding-bottom: 54px;
+	background-color: #16a086;
+}
+
+main .about h2{
+	font-size: 28px;
+	line-height: 29px;
+	margin-bottom: 12px;
+	color: #fff;
+}
+
+main .about>p{
+	line-height: 14px;
+	margin-bottom: 43px;
+	color: #fff;
+}
+
+main .about .row {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+main .about .row .col-md-4{
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+main .about .row .content{
+	max-width: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #fff;
+}
+
+/* Contact */
+main .contact{
+	padding-top: 50px;
+	padding-bottom: 60px;
+	background-color: #ecf0f1;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+main .contact h2{
+	font-size: 28px;
+	line-height: 29px;
+	margin-bottom: 12px;
+}
+
+main .contact>p{
+	line-height: 14px;
+	margin-bottom: 50px;
+}
+
+main .contact .row>.col-md-6{
+	padding: 0;
+}
+
+main .contact .row>.col-md-6>.col-md-6,main .contact .row .col-md-12{
+	padding-right: 0px;
+}
+
+main .contact .row .col-md-6  .col-md-6 input{
+	height: 47px;
+	border: 2px solid #bec3c7;
+	border-radius: 0;
+	padding: 6px 12px;
+	margin-bottom: 22px;
+}
+
+main .contact .row .col-md-12 textarea{
+	height: 153px;
+	border: 2px solid #bec3c7;
+	border-radius: 0;
+	padding: 15px 12px;
+	margin-bottom: 23px;
+}
+
+main .contact .row .col-md-6 input[type=submit]{
+	letter-spacing: 2px;
+	padding-left: 28px;
+	padding-right: 28px;
+	margin-bottom: 0;
+}
+
+::placeholder{
+	font-family: Lato-Italic;
+	color: #999;
+	line-height: 15px;
+}
+
+main .contact .row .text-left{
+	padding-left: 20px;
+}
+
+main .contact .row .col-md-6 h3{
+	font-size: 14px;
+	line-height: 14px;
+	margin-bottom: 21px;
+}
+
+main .contact .row .col-md-6 p:nth-child(2){
+	margin-bottom: 25px;
+	line-height: 21px;
+}
+
+main .contact .row .col-md-6 p{
+	margin-bottom: 16px;
+	line-height: 15px;
+}
+
+main .contact .row .col-md-6 p:nth-child(2) span, main .contact .row .col-md-6 p:nth-child(2) i{
+	float: left;
+}
+
+main .contact .row .col-md-6 p:nth-child(2)::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+main .contact .row .col-md-6 p:nth-child(2) span{
+	margin-top: -3px;
+	margin-left: 7px;
+}
+
+main .contact .row .col-md-6 p:nth-child(5) {
+	margin-bottom: 0;
+}
+
+/* Footer */
+footer{
+	padding: 37px 40px;
+	background-color: #2d3e50;
+}
+
+footer .container-fluid p{
+	color: #fff;
+	line-height: 14px;
+}
+
+footer .container-fluid .box {
+	width: 40px;
+	float: right;
+}
+
+footer .container-fluid .box a{
+	font-size: 20px;
+	color: #fff;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	background-color: #1bbc9b;
+	position: fixed;
+	bottom: 20px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+

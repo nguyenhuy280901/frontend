@@ -1,0 +1,105 @@
+#id1 a:visited {
+	color: green;
+}
+
+/*hover: liên kết được hover (rê chuột vào liên kết)*/
+#id1 a:hover {
+	color: yellow;
+  text-decoration: none;
+}
+
+/*active: liên kết được chọn (khi click chuột trên liên kết – chuột trái được nhấn)*/
+#id1 a:active {
+	color: orange;
+}
+
+/*first-of-type:điều kiện lọc(không phải thẻ(x) và ko có con)*/
+
+/*first-child: thẻ thứ nhất là con của bất kỳ thẻ cha nào, mà phải là thẻ p
+Nếu không phải là thẻ p, sẽ không chọn
+*/
+#id2 p:first-child {
+	background-color: blue;
+
+}
+
+/*first-of-type: lọc thẻ p, trong tập vừa lọc được, 
+thẻ thứ nhất là con của bất kỳ thẻ cha nào, sẽ được chọn
+
+*/
+#id3 p:first-of-type {
+	background-color: yellow;
+
+}
+
+/*Pseudo-element: chỉ định một phần của phần tử*/
+/*Định dạng cho ký tự đầu tiên của thẻ*/
+#id6::first-letter {
+	font-size:20px;
+	color:red;
+}
+
+/*Định dạng cho dòng đầu tiên của thẻ. Phóng to/thu nhỏ để thấy kết quả thay đổi ở dòng đầu tiên*/
+#id7::first-line {
+	font-size:20px;
+	color:red;
+}
+
+/*Thêm nội dung vào trước thẻ*/
+#id8::before {
+	content:"ABC";
+	font-size: 40px;
+	color:blue;
+}
+
+/*Thêm nội dung vào sau thẻ*/
+#id9::after {
+	content:"ABC";
+	font-size: 40px;
+	color:blue;
+}
+
+/*Opacity (Độ mờ/độ trong suốt): có gí trị từ 0.0 đến 1.0 (mặc định). Giá trị càng nhỏ thì càng mờ*/
+#id10{
+	opacity: 0.5;
+}
+
+/*Nếu z-index của 2 phần tử cùng bằng 0 thì sẽ ưu tiên phần tử có positon là absolute và fixed sẽ được chồng lên*/
+
+/*z-index*/
+.dashed-box { 
+  position: relative;
+  z-index: 1;
+  border: dashed;
+  height: 8em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.gold-box { 
+  position: absolute;
+  z-index: 3; /*put .gold-box above .green-box and .dashed-box*/
+  background: gold;
+  width: 80%;
+  left: 60px;
+  top: 3em;
+}
+.green-box { 
+  position: absolute;
+  z-index: 2; /*put .green-box above .dashed-box*/
+  background: lightgreen;
+  width: 20%;
+  left: 65%;
+  top: -25px;
+  height: 7em;
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+

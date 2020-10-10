@@ -1,0 +1,159 @@
+/* text-align:right*/
+#id1 {
+	text-align:right;
+	border: 1px double green;
+}
+
+/* text-align:center*/
+#id2 {
+	text-align:center;
+	border: 1px double green;
+}
+
+/* text-align:justify*/
+#id3 {
+	text-align:justify;
+	border: 2px double green;
+}
+
+/*text-decoration:none (không underline). Mặc định thẻ a có underline*/
+#id4 {
+	text-decoration: none;
+}
+
+/*text-decoration:underline. Mặc định thẻ p không có underline*/
+#id5 {
+	text-decoration: underline;
+}
+
+/*text-decoration:overline*/
+#id6 {
+	text-decoration: overline;
+}
+
+/*text-decoration:line-through*/
+#id7 {
+	text-decoration: line-through;
+}
+/*text-transform:uppercase*/
+#id8 {
+	text-transform: uppercase;
+}
+
+/*text-transform:lowercase*/
+#id9 {
+	text-transform: lowercase;
+}
+
+/*text-transform:lowercase*/
+#id10 {
+	text-transform: capitalize;
+}
+
+/*text-indent: Dùng để xác định khoảng thụt đầu dòng của dòng đầu tiên trong đoạn văn*/
+#id11 {
+	text-indent: 40px;
+}
+
+/*letter-spacing: tẳng/giảm khoảng cách giữa các ký tự*/
+#id12 {
+	letter-spacing: 3px;
+}
+
+/*line-height: khoảng cách giữa các dòng (chiều cao của 1 dòng)*/
+#id13 {
+	line-height:50px;
+	border: 1px solid black;
+}
+
+/*word-spacing:tăng/giảm khoảng cách giữa các từ. Mặc định khoảng cách giữa các từ là 2.5em*/
+#id14 {
+	word-spacing: 20px;
+}
+
+/*text-shadow: thêm đỗ bóng vào text (văn bản)*/
+/*Cú pháp: text-shadow: h-shadow v-shadow blur-radius color*/
+/*Lưu ý: độ mờ đơn vị là px. Gí trị càng lớn thì càng mờ. Giá trị mặc định là 0*/
+
+#id15 {
+	text-shadow:  10px 15px 0 grey; /*Có thể ghi là: text-shadow:  10px 15px grey*/
+}
+
+#id16 {
+	text-shadow:  10px 15px 3px grey;
+}
+
+/*Mờ đều hết 4 hướng*/
+#id17 {
+	text-shadow:  0 0 5px grey;
+}
+
+/*Kết hợp 2 loại mờ. Dùng dấu phẩy*/
+#id18 {
+	text-shadow:  10px 15px 2px grey, -10px -15px 2px red, 20px -15px 2px yellow;
+}
+
+/*vertical-align: Cân chỉnh theo chiều dọc*/
+/*Canh với thằng cao nhất trong dòng đó*/
+#id19 {
+	vertical-align: top;
+}
+
+/*Canh với thằng nhấp nhất trong dòng đó*/
+#id20 {
+	vertical-align: bottom;
+}
+
+/*Cao hơn so với baseline*/
+#id21 {
+	vertical-align: super;
+}
+
+/*Thấp hơn so với baseline*/
+#id22 {
+	vertical-align: sub;
+}
+
+/*Canh với top của font-size cha*/
+#id23 {
+	vertical-align: text-top;
+}
+
+/*Canh với bottom của font-size cha*/
+#id24 {
+	vertical-align: text-bottom;
+}
+
+#id24-1 {
+	vertical-align: middle;
+}
+
+/*chỉ định khoảng trắng trong 
+văn bản được đối xử như thế nào. Có một số giá trị: normal (mặc định), nowrap, pre, pre-line, pre-wrap*/
+/*normal: nhiều khoảng trắng kề nhau sẽ thành 1 khoảng trắng. Bọc lại khi cần thiết*/
+#id26 {
+	white-space: normal;
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+	/*text-align: justify;*/
+}
+
+/*white-space:nowrap*/
+/*nowrap: nhiều khoảng trắng kề nhau sẽ thành 1 khoảng trắng. Không bọc lại.*/
+#id27 {
+	white-space: nowrap;
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+/*white-space:pre*/
+/*pre: nhiều khoảng trắng kề nhau sẽ được giữ nguyên.
+Không bọc lại. Xuống dòng được giữa nguyên. Thuộc tính này giống y như thẻ <pre>*/
+#id28 {
+	white-space: pre;
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}

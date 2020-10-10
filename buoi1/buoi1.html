@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buổi 1</title>
+</head>
+<body>
+	<b>XYZ</b> <!-- ko seo được -->
+	<a href="https://www.google.com/">Go to google</a>
+	<strong>A1</strong> <!-- seo được -->
+	<del>A2</del>
+	<i>A3</i>
+	<u>A4</u>
+	<mark>A5</mark>
+	H<sub>2</sub>0
+	e<sup>7</sup>
+	<h1>A1</h1>
+	<h2>A2</h2>
+	<h3>A3</h3>
+	<h4>A4</h4>
+	<h5>A5</h5>
+	<h6>A6</h6>
+	<hr>
+	<img src="logo.jpg" alt="Die rồi">
+	<br>
+	Username: <input type="text">
+	<br>
+	Password: <input type="password">
+	<br>
+	Date: <input type="date">
+	<br>
+	Number: <input type="number">
+	<br>
+	Email: <input type="email">	
+	<br>
+	<br>
+
+	<input type="email">
+	<input type="range" value="5" min="0" max="10">
+	<br>
+	<br>
+
+	<input type="radio"> Nam
+	<br>
+	<input type="radio"> Nữ
+	<br>
+	<input type="radio"> KXD
+	<br>
+	<br>
+
+	<input type="checkbox"> Nhà
+	<br>
+	<input type="checkbox"> Xe
+	<br>
+	<input type="checkbox"> Bơi lội
+	<br>
+	<br>
+
+	<!-- Đây là form submit -->
+	<!-- Để đưa dữ liệu lên sever cần đặt thuộc tính name cho thẻ input -->
+	<!-- Method="POST" gửi dữ liệu lên sever ngầm định, method="GET" gửi dữ liệu lên sever lộ thiên, mặc định là GET -->
+
+	<form action="processLogin.php" method="POST">
+		Username: <input type="text" name="username">
+		<br>
+		Password: <input type="password" name="password">
+		<br>
+		<input type="submit" value="Đăng Nhập">
+		<input type="reset" value="Reset">
+		<br>
+	</form>
+
+</body>
+</html>

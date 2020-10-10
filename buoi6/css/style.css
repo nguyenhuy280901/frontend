@@ -1,0 +1,68 @@
+/*Table*/
+/*border*/
+#id1, #id1 th, #id1 td {
+  	border: 1px solid black;
+}
+
+#id2, #id2 th, #id2 td {
+	border: 1px solid black;
+}
+
+/*border-collaps:collapse chuyển 2 đường thành 1 đường và bỏ khoảng spacing giữa 2 đường*/
+/*Mặc định là sperate*/
+#id2 {
+	border-collapse: collapse;
+}
+
+/*Fullscreen table*/
+table#id3 {
+	border-collapse: collapse;
+	width:100%;
+}
+
+table#id3, #id3 th, #id3 td {
+	border: 1px solid black;
+}
+
+/*Stripped table: tạo màu cách dòng để dễ phân biệt giá trị ở các dòng*/
+
+table#id4 {
+  border-collapse: collapse;
+  width:100%;
+}
+
+table#id4, #id4 th, #id4 td {
+  border: 1px solid black;
+}
+
+/*Sử dung pseudo-class*/
+table#id4 tbody tr:nth-child(even) /* odd lẻ */ {
+	background-color: #CFB3B3;
+}
+
+/*Hoverable table: move chuột lên dòng nó sẽ hightlight dòng đó*/
+
+table#id5 {
+  border-collapse: collapse;
+  width:100%;
+}
+
+table#id5, #id5 th, #id5 td {
+  border: 1px solid black;
+}
+
+/*Sử dung pseudo-class*/
+#id5 tr:hover {
+	background-color: #E5D3F4;
+}
+
+/*List*/
+/*list-style-type. Mặc định là circle*/
+#id6 {
+	list-style-type: square;
+}
+
+#id7 {
+	list-style-image: url('img/bullet_pdf.png');
+}
+

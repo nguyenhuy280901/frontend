@@ -1,0 +1,15 @@
+body{
+	font-size: 18px;
+}
+#span1{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+#button{
+	width: 100px;
+	height: 30px;
+	background-color: #9C0909;
+	color: white;
+	font-size: 18px;
+}

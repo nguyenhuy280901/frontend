@@ -1,0 +1,119 @@
+/*overflow: Xác định đều gì xãy ra khi nội dung thì to hơn so với vùng nội dung của thẻ. Gồm có các giá trị*/
+/*visible: nội dung tràn ra khỏi thẻ (không bị cắt xén), đây là giá trị mặc định*/
+#id1 {
+	width:200px;
+	height:100px;
+	border: 1px solid black;
+	overflow: visible;
+}
+
+/*hidden: phần tràn ra ngoài bị cắt*/
+#id2 {
+	width:200px;
+	height:100px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+
+/*scroll: thêm scroll vào để thấy phần bị tràn ra ngoài (luôn luôn thêm)*/
+#id3 {
+	width:200px;
+	height:100px;
+	border: 1px solid black;
+	overflow: scroll;
+}
+
+/*auto: thêm thanh cuộn khi cần thiết*/
+#id4 {
+	width:200px;
+	height:100px;
+	border: 1px solid black;
+	overflow: auto;
+}
+
+/*Max-width: Thuộc tính xác định chiều rộng tối đa của thẻ, 
+đương nhiên nó có thể nhỏ hơn giá trị chỉ định tùy thuộc vào kích thước màn hình*/
+#id7 {
+	max-width: 500px;
+	border:1px solid red;
+	margin:auto;
+}
+
+#id9 {
+	/*Có thể không ghi dòng display:inline vì nó là thẻ a (mặc định đã là inline)*/
+	/* Display: inline không set được width và height */
+	display:block;
+	background-color: yellow;
+	width:200px;
+	/*không ảnh hưởng*/
+	height:100px;
+	/*không ảnh hưởng*/
+}
+
+#id9-1 {
+	display: none;
+	height: 200px;
+	background-color: blue;
+}
+
+/*inline-block*/
+#id10 {
+	
+	display:inline-block;
+	background-color: red;
+	width:200px;
+	height:100px;
+}
+
+/*table, table-header-group, table-row-group, table-row, table-cell*/
+#id11 {
+	width:100%;
+	display: table;/*table*/
+	border-collapse: collapse;
+}
+
+.thead{
+	display: table-header-group;/*thead*/
+	font-weight: bold;
+
+}
+
+.tbody{
+	display: table-row-group;/*tbody*/
+}
+
+.tr{
+	display: table-row;/* tr*/
+}
+
+.td{
+	display: table-cell; /*td*/
+}
+
+#id11, .td {
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+div#id1{
+	position: relative;
+	right: 10px;
+	background-color: green;
+}
+
+#id2{
+	/* Khi set position: fixed; thì phần tử sẽ tự động chuyển sang display: inline-block; và ko thể set lại thành display: block; được */
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #0C6DF0;
+}
+
+#cha{
+	position: relative;
+	margin-top: 20px;
+}
+
+#id3{
+	position: absolute;
+	top: 10px;
+	background-color: #05F5D6;
+}
+
+#id4{
+	position: sticky;
+	top: 0px;
+	background-color: #040FF3;
+}

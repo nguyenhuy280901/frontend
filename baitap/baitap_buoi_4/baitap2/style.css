@@ -1,0 +1,22 @@
+body{
+	font-size: 18px;
+}
+ul{
+	margin: 10px 40px;
+	padding: 0px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+#first{
+	color: #2AB6F7;
+}
+#button{
+	width: 100px;
+	height: 50px;
+	background-color: white;
+}

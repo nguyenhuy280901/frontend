@@ -1,0 +1,14 @@
+#id1{
+	background-color: red;
+}
+
+#id2{
+	background-color: green;
+}
+
+@media only screen and (min-width: 768px){
+	#id1,#id2 {
+		width: 50%;
+		float: left;
+	}
+}

@@ -1,0 +1,57 @@
+#header{
+	background-color: red;
+	height: 50px;
+	margin: 10px 0px;
+}
+
+#aside{
+	width: 30%;
+	float: left;
+	background-color: blue;
+	height: 600px;
+
+}
+
+#content{
+	width: 70%;
+	float: left;
+	background-color: green;
+	height: 600px;
+	margin-bottom: 10px;
+}
+
+#footer{
+	background-color: yellow;
+	height: 50px;
+	margin-top: 10px;
+	clear: both;
+}
+
+a{
+	display: none;
+}
+
+@media only screen and (max-width: 768px){
+	#aside{
+		display: none;
+	}
+	#content{
+		width: 100%;
+		margin-top: 50px; 
+	}
+	a{
+		position: absolute;
+		right: 10px;
+		top: 70px;
+		display: block;
+		margin-bottom: 20px;
+		width: 100px;
+		height: 30px;
+		border: 1px solid black;
+		padding: 3px;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+		text-align: center;
+	}
+}

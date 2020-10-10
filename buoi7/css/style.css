@@ -1,0 +1,61 @@
+/*	margin: auto. 
+Canh giữa cho những phần tử block. 
+Lưu ý nó sẽ không hoạt động nếu width không được chỉ định hoặc chỉ định 100%*/
+#id1 {
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+	margin:auto;
+}
+
+#id1-1 {
+	max-width: 500px;
+	height: 150px;
+	border: 1px solid black;
+	margin-left: calc((100% - 500px) / 2);
+}
+
+#id5 {
+	width: 200px;
+	/*line-height:100px;*/
+	padding-top:50px;
+	padding-bottom: 50px;
+	border: 1px solid orange;
+}
+
+/*Sử dụng line-height: chỉ định line-height bằng với height của thẻ, dùng cho trường hợp 1 dòng text. 
+Cần phải biết kích thước height trước*/
+#id6 {
+	width: 200px;
+	/*height: 150px;*/
+	/*line-height: 3; */
+	/*font-size:20px;*/
+	line-height: 60px;
+	border: 1px solid blue;
+}
+
+#id7 {
+	position: relative;
+	border: 1px solid black;
+	height: 200px;
+	/*padding-left:50%;*/
+}
+/*position: absolute, fixed, sticky ko xài margin: auto để căn giữa được*/
+#id7 > div {
+	top: 50%;
+	position: absolute;
+	border: 1px solid red;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập 1</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="processLogin.php" method="POST">
+		<h2>Đăng kí</h2>
+		<div id="input_ten_left">
+			<label for="input1">Tên: </label>
+		</div>
+		<div id="input_ten_right">
+			<input id="input1" type="text" name="name"><br>
+			<span>Đây là tên sẽ được hiển thị cùng với thông tin của bạn. Bạn có thể sử dụng bất kỳ tên nào mà bạn muốn. <br>
+			Sau khi tạo, bạn sẽ không thay đổi được tên này</span> <br>
+		</div>
+
+		<div style="clear: both;"></div>
+		
+		<div id="input_email_left">
+			<label for="input2">Địa chỉ Email:</label>
+		</div>
+		<div id="input_email_right">
+			<input id="input2" type="email" name="email"><br>
+			<span>Lưu ý điền email cẩn thận. Nếu điền sai, email bạn sẽ không đăng ký được thành viên (khuyến khích nên dùng Gmail)</span>
+		</div>
+		<div style="clear: both; height: 0px;"></div><hr>
+
+		<div id="input_password_left">
+			<label for="input3">Mật khẩu: </label><br>
+			<div style="height: 10px;"></div>
+			<label for="input4">Xác nhận mật khẩu: </label>
+		</div>
+		<div id="input_password_right">
+			<input id="input3" style="margin-bottom: 5px;" type="password" name="password"><br>
+			<input id="input4" type="password"><br>
+			<span>Nhập mật khẩu của bạn trong lần đầu tiên và xác nhận nó bằng cách nhập lại mật khẩu vào ô bên dưới.</span>
+		</div>
+
+		<div style="clear: both;height: 0px;"></div><hr>
+
+		<div id="input_gender_left">
+			<span>Giới tính: </span>
+		</div>
+		<div id="input_gender_right">
+			<input id="Male" type="radio" name="gender" value="Male"><label for="Male">Nam</label> <br>
+			<input id="Female" type="radio" name="gender" value="Female"><label for="Female">Nữ</label> <br>
+			<input id="Undefine" type="radio" name="gender" value="Undefine"><label for="Undefine">(Không xác định)</label><br>
+		</div>
+
+		<div style="clear: both;"></div>
+
+		<div id="input_birthday_left">
+			<span>Ngày sinh:</span>
+		</div>
+		<div id="input_birthday_right">
+			<select name="day" class="birthday">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			<input type="number" placeholder="Tháng" name="month" class="birthday" min="1" max="12">
+			<input type="number" placeholder="Năm" name="year" class="birthday" min="1900" max="2020">
+		</div>
+
+		<div style="clear: both; height: 0px;"></div><hr>
+
+		<div id="captcha_left">
+			<span>Xác nhận: </span>
+		</div>
+		<div id="captcha_right">
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	     	<div class="g-recaptcha" data-sitekey="6LdHSqwZAAAAAHTE7n7gD1r0hLNHfoGgYbtmiUSX"></div>
+		</div>
+		<hr>
+
+		<div style="clear: both;"></div>
+
+		<div id="checkbox">
+			<input type="checkbox" name="checkbox" checked value="Checked" required><span>Tôi đã đọc <a href="#">Nội quy diễn đàn</a>. Tôi hứa sẽ chấp hành nghiêm chỉnh.</span> <br>
+		</div>
+
+		<div style="clear: both;"></div>
+		
+		<div id="submit">
+			<input type="submit" id="button" value="Đăng ký">
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tập</title>
+</head>
+<body>
+	<img src="buoi3/profile.png" alt="">
+	<nav>
+		<ul>
+			<li><a href="">Personal Information</a></li>
+			<li><a href="">Certificates</a></li>
+			<li><a href="">Interest</a></li>
+			<li><a href="">Change Password</a></li>
+		</ul>
+	</nav>
+	<h3>Personal Information</h3>
+	<hr>
+	<form action="server.php" method="POST">
+		<b>Firstname</b><input type="text" name="Firstname"><br>
+		<b>Lastname</b><input type="text" name="Lastname"><br>
+		<b>Email Address</b><input type="email" name="Email Address"><br>
+		<b>Upload Image</b><input type="file" name="Upload Image" enctype="mutilpart/form-data"><br>
+		<b>Location</b><input type="text" name="Location"><br>
+		<b>Country</b> <select name="Country">
+			<option value="vietmam">Vietnam</option>
+		</select><br>
+		<b>English Level</b><input type="range" name="English Level" min="0" max="5"> <br>
+		<b>Gender</b> 
+			<input type="radio" name="Gender" value="Male">Male <br>	
+			<input type="radio" name="Gender" value="Female">Female <br>
+		 	<input type="radio" name="Gender" value="Undifined">Undifined <br>
+		 <input type="submit" value="Save">
+	</form>
+</body>
+</html>

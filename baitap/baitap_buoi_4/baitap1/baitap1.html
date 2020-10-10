@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h3>Đăng kí</h3>
+	<form action="processLogin.php" method="POST">
+		<label>Tên: <input type="text" name="tên"></label><br>
+		Đây là tên sẽ được hiển thị cùng với thông tin của bạn. Bạn có thể sử dụng bất kỳ tên nào mà bạn muốn. <br>
+		Sau khi tạo, bạn sẽ không thay đổi được tên này <br>
+		<label >Địa chỉ Email: <input type="email" name="email"></label><br>
+		Lưu ý điền email cẩn thận. Nếu điền sai, email bạn sẽ không đăng ký được thành viên (khuyến khích nên dùng Gmail)<hr>
+		<label>Mật khẩu: <input type="password" name="matkhau"></label><br>
+		<label>xác nhận mật khẩu: <input type="password"></label><br>
+		Nhập mật khẩu của bạn trong lần đầu tiên và xác nhận nó bằng cách nhập lại mật khẩu vào ô bên dưới. <hr>
+		Giới tính: <br>
+		<input type="radio" name="gioitinh" value="Nam">Nam <br>
+		<input type="radio" name="gioitinh" value="Nữ">Nữ <br>
+		<input type="radio" name="gioitinh" value="Không xác định">(Không xác định) <br>
+		Ngày sinh: <select name="ngay">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+		</select>
+		<input type="number" placeholder="Tháng" name="thang" min="1" max="12">
+		<input type="number" placeholder="Năm" name="nam" min="1900" max="2020">
+		<hr>
+	    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	      Xác nhận: <div class="g-recaptcha" data-sitekey="6LdHSqwZAAAAAHTE7n7gD1r0hLNHfoGgYbtmiUSX"></div>
+	     <hr>
+	     <input type="checkbox" name="checkbox" value="Đã đọc nội quy">Tôi đã đọc <span id="span1"> Nội quy diễn đàn</span>. Tôi hứa sẽ chấp hành nghiêm chỉnh. <br>
+	     <input type="submit" id="button" value="Đăng ký">
+	</form>
+</body>
+</html>

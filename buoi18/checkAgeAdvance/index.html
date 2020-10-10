@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CheckAgeAdvance</title>
+	<link rel="stylesheet" href="vendor/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+	<script src="vendor/jquery-3.5.1.min.js"></script>
+	<script src="vendor/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="container-fluid w-25">
+		<form action="processRegister.php" method="POST">
+			<span class="text-danger font-weight-bold">Ngày sinh</span>
+			<div class="form-group">
+				<input type="date" class="form-control" name="birthday">
+			</div>
+			<div class="form-group">
+				<div class="bg-danger text-white px-2 age-error"></div>
+			</div>
+			<button type="submit" class="btn btn-primary">Đăng ký</button>
+		</form>
+	</div>
+</body>
+</html>

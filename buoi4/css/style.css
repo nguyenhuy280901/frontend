@@ -1,0 +1,98 @@
+/* Các loại selector trong css
+Type/Tag selector. Tag: thẻ
+	id selector
+	class selector
+	Combination selector
+		khoảng trắng: nằm trong
+		> : con trực tiếp
+*/
+/* p selector(phần tử được chọn)  {
+	Khai báo css
+	background-color: blue;
+	font-size: 20px;
+} */
+
+/* #id1,#id2 {
+	color: orange;
+} */
+
+/* .class1{
+	color: yellow;
+} */
+
+/*div span {
+	color: red;
+	 - khoảng trắng dịch là nằm trong
+	Apply code css cho thằng gần nhất(span nằm trong div)
+}*/
+
+/* div > span{
+	color: red;
+} */
+
+/*div .class2{
+	color: rgb(0,255,0);
+	 bất kì thẻ nào có thuộc tính class="class2" nằm trong thẻ div thì được tô màu xanh
+}*/
+
+div span.class2{
+	color: green;
+	/*Tất cả thẻ span có class="class2" nằm trong thẻ div sẽ được tô màu xanh*/
+}
+
+/*div span .class2{
+	color: green;
+	Bất kì thẻ nào có class="class2" nằm trong thẻ span và thẻ span đó phải nằm trong thẻ div sẽ được to màu xanh
+}*/
+
+/* thuộc tính css */
+/*- color:
++rgb:
+black: rgb(0,0,0)
+white: rgb(255,255,255)
+red: rgb(255,0,0)
+green: rgb(0,255,0)
+blue: rgb(0,0,255)*/
+
+/* Hệ nhị phân - binary: 0,1
+Hệ thập phân - decimal: 0,...9
+Hệ thập lục phân: hexadecimal: 0,..,9,A,B,C,D,E,F */
+
+/*#97FE45(hệ 16) = rgb(151,254,69)(hệ 10)
+97(hệ 16) bằng ? trong hệ 10
+9x16^1 + 7 x 16^0 = 151
+FE = 15x16^1 + 14x16^0 = 254
+45 = 4x16+5 = 69
+rgba(151,254,69,0.5) Hệ số alpha chạy từ 0->1 và bước nhảy là 0.1
+*/
+
+#id3 {
+	width:400px;
+	padding:5px;
+	border:1px solid black;
+	margin: 3px;
+}
+
+#id4 {
+	font-size: 12px;
+	width:20em;
+
+	background-color: green;
+}
+
+
+#id5 {
+	font-size: 12px;
+	width:20rem;
+	background-color: green;
+}
+html {
+	font-size: 20px;
+}
+
+#id6 {
+	width:400px;
+	/* padding: 5px; */
+	padding: 5px 6px 7px 8px;
+	background-color: green;
+}

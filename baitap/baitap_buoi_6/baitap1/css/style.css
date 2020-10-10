@@ -1,0 +1,69 @@
+@font-face{
+	font-family: Ubuntu-Medium;
+	src: url('font/Ubuntu-Medium.ttf');
+}
+form{
+	width: 80%;
+	margin: auto;
+	font-family: Ubuntu-Medium;
+}
+
+#input_ten_left, #input_email_left, #input_password_left, #input_gender_left, #input_birthday_left,#captcha_left{
+	width: calc(35% - 6px);
+	text-align: right;
+	float: left;
+	margin-right: 6px;
+}
+
+#input_ten_right,#input_email_right, #input_password_right, #input_gender_right, #input_birthday_right, #captcha_right{
+	width: 65%;
+	float: left;
+	margin: 0px;
+}
+
+.birthday{
+	width: 100px;
+	height: 30px;
+}
+
+#checkbox{
+	width: 65%;
+	float: right;
+}
+
+#submit{
+	width: 63%;
+	float: right;
+	margin-top: 10px;
+}
+label, span{
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#input1, #input2, #input3, #input4{
+	height: 20px;
+	width: 400px;
+}
+
+hr{
+	width: 70%;
+	margin-top: 25px;
+
+}
+
+a{
+	font-size: 22px;
+	font-weight: bold;
+	color: #f32e2e;
+	text-decoration: none;
+}
+
+#button{
+	width: 100px;
+	height: 40px;
+	color: #FFF;
+	background-color: #9C0909;
+	font-size: 18px;
+	font-weight: bold;
+}
